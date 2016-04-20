@@ -88,24 +88,11 @@ public class skeletAttack : MonoBehaviour
 
 		if(playerHealth.currentHealth > 0)
 		{
-			agent.destination = tran.position;
-
-			//rigid.constraints = RigidbodyConstraints.FreezeRotation;		//НАДО ЗАФРИЗИТЬ НОРМАЛЬНО
-			//freezeRotation = true;
+		
 			dontRot = true;
 
 			anim.SetTrigger ("Attack");
-			//Vector3 relativePos = player.transform.position - transform.position;
-			//Quaternion targetRot = Quaternion.LookRotation (relativePos);
-
-
-			//transform.Rotate (Vector3.right * Time.deltaTime * rotSpeed);
 			
-			//attacking = false;
-			//transform.rotation = Quaternion.Slerp (transform.rotation, targetRot, Time.time * rotSpeed);
-
-
-
 		}
 	}
 
